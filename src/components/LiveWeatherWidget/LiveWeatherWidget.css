@@ -1,0 +1,62 @@
+.live-widget {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    z-index: 1000;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.live-widget:hover {
+    background: rgba(0, 0, 0, 0.6);
+    transform: translateY(2px);
+}
+
+.live-widget.loading {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.live-icon img {
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+.live-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.live-temp {
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.2;
+}
+
+.live-loc {
+    font-size: 0.75rem;
+    opacity: 0.9;
+    white-space: nowrap;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 600px) {
+    .live-widget {
+        top: auto;
+        bottom: 1rem;
+        /* Move to bottom on mobile to avoid covering header */
+        left: 1rem;
+    }
+}

@@ -1,0 +1,41 @@
+.error-container {
+    background: rgba(231, 76, 60, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(231, 76, 60, 0.3);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+.error-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.error-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.error-text {
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
+}
+
+.retry-button {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 0.6rem 2rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.retry-button:hover {
+    background: #c0392b;
+}
